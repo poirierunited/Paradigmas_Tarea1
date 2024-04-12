@@ -6,8 +6,9 @@ private:
     int precio_vehiculo;
 
 public:
-    Vehiculo(std::string marca);
+    Vehiculo();
     std::string getMarca();
     int getPrecioVehiculo();
     void setPrecioVehiculo(int precio);
+    void setMarca(std::string marca);
 };

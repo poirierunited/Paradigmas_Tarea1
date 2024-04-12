@@ -12,6 +12,11 @@ void Vehiculo::setPrecioVehiculo(int precio) {
     precio_vehiculo = precio;
 }
 
-Vehiculo::Vehiculo(std::string marca) : marca(marca) {
-    precio_vehiculo = 0; // Valor por defecto
+void Vehiculo::setMarca(std::string marca) {
+    this->marca = marca;
+}
+
+Vehiculo::Vehiculo() {
+    marca = "";
+    precio_vehiculo = 0;
 }

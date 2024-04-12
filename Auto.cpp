@@ -19,7 +19,7 @@ void Auto::setPrecioLuces(int precio) {
     precio_luces = precio;
 }
 
-Auto::Auto(std::string marca) : Vehiculo(marca) {
+Auto::Auto(std::string marca) : Vehiculo() {
     std::string fileName = "Auto.txt";
     std::ifstream file(fileName);
     if (!file.is_open()) {
@@ -31,6 +31,7 @@ Auto::Auto(std::string marca) : Vehiculo(marca) {
 
     std::string line;
     std::string section;
+    bool marcaEncontrada = false; // Bandera para verificar si se encontró la marca
     while (std::getline(file, line)) {
         std::istringstream iss(line);
         std::string key;
@@ -49,6 +50,8 @@ Auto::Auto(std::string marca) : Vehiculo(marca) {
                     // std::cout << "Marca: " << key << ", Precio del vehículo: " << value << std::endl; // Salida de depuración
                     if (key == marca) {
                         setPrecioVehiculo(value);
+                        setMarca(key);
+                        marcaEncontrada = true;
                         break;
                     }
                 }
@@ -56,10 +59,12 @@ Auto::Auto(std::string marca) : Vehiculo(marca) {
         }
     }
 
+    if (!marcaEncontrada) {
+        std::cerr << "Error: La marca " << marca << " no existe en el archivo." << std::endl;
+        file.close();
+        return;
+    }
+
     std::cout << "Lectura finalizada." << std::endl;
+    file.close();
 }
-
-
-
-
-
