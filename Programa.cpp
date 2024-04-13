@@ -1,6 +1,7 @@
 // Archivo Programa.cpp
 
 #include "Programa.h"
+#include "Auto.h"
 
 Programa::Programa() {
 }
@@ -45,14 +46,12 @@ void Programa::ejecutar() {
                     std::cout << "\nSubmenu Venta:\n";
                     std::cout << "1. Terminar venta\n";
                     std::cout << "2. Cancelar venta\n";
-                    std::cout << "3. Comprar vehiculo\n";
-                    std::cout << "4. Comprar accesorios\n";
+                    std::cout << "3. Comprar vehiculo o accesorios\n";
                     std::cout << "Ingrese una opcion: ";
                     std::cin >> opcionVenta;
                     
                     switch (opcionVenta) {
                         case 1:
-                            // Finalizar venta
                             std::cout << "Venta finalizada.\n";
                             ventaEnCurso = false;
                             ventas.push_back(nuevaVenta);
@@ -73,15 +72,52 @@ void Programa::ejecutar() {
                                 std::cout << "Ingrese una opcion: ";
                                 std::cin >> tipo_vehiculo;
 
+                                Auto auto_elegido;
+
                                 std::string marca_auto;
                                 switch (tipo_vehiculo) {
                                     case 1:
+                                    case 2:
+                                    case 3:
+                                        int cantidad_autos;
+                                        int cantidad_puertas;
+                                        int cantidad_luces;
                                         std::cout << "Ingrese la marca del auto:\n ";
                                         std::cin >> marca_auto;
-                                        break;
-                                    case 2:
-                                        break;
-                                    case 3:
+                                        auto_elegido = Auto(marca_auto);
+                                        if (auto_elegido.getMarca() == "") {
+                                            std::cout << "Marca ingresada no existe, volviendo a submenú.\n";
+                                            break;
+                                        } else {
+                                            int opcion_venta;
+                                            do {
+                                                std::cout << "Submenú venta autos y accesorios para marca " << auto_elegido.getMarca() << std::endl;
+                                                std::cout << "1. Comprar Autos " << auto_elegido.getMarca() << "\n"  << std::endl;
+                                                std::cout << "2. Comprar Accesorios " << auto_elegido.getMarca() << "\n"  << std::endl;
+                                                std::cout << "3. Volver\n";
+                                                std::cout << "Ingrese una opcion: ";
+                                                std::cin >> opcion_venta;
+
+                                                switch (opcion_venta)
+                                                {
+                                                case 1:
+                                                    std::cout << "Elige cantidad de Autos " << auto_elegido.getMarca() << "a comprar:\n"  << std::endl;
+                                                    std::cin >> cantidad_autos;
+                                                    break;
+                                                case 2:
+                                                    std::cout << "Elige accesorios para Autos " << auto_elegido.getMarca() << "a comprar:\n"  << std::endl;
+                                                    std::cout << "1." << auto_elegido.getAccesorioN1() << "\n"  << std::endl;
+                                                    std::cout << "2." << auto_elegido.getAccesorioN2() << "\n"  << std::endl;
+                                                    std::cout << "3. Volver\n";
+                                                    std::cin >> cantidad_autos;
+                                                    break;
+                                                default:
+                                                    break;
+                                                }
+
+                                            }while (opcion_venta != 3);
+                                            break;
+                                        }
                                         break;
                                     case 4:
                                         break;
@@ -89,11 +125,6 @@ void Programa::ejecutar() {
                                         std::cout << "Opcion invalida. Intente de nuevo.\n";
                                 }
                             } while (tipo_vehiculo != 4);
-                            break;
-                        case 4:
-                            // Comprar accesorios
-                            std::cout << "Comprar accesorios.\n";
-                            // Aquí podrías implementar la lógica para comprar accesorios
                             break;
                         default:
                             std::cout << "Opcion invalida. Intente de nuevo.\n";

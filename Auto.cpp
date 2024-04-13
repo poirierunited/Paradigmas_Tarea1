@@ -19,6 +19,18 @@ void Auto::setPrecioLuces(int precio) {
     precio_luces = precio;
 }
 
+std::string Auto::getAccesorioN1() {
+    return accesorio_n1;
+}
+std::string Auto::getAccesorioN2() {
+    return accesorio_n2;
+}
+
+Auto::Auto() : Vehiculo() {
+    precio_puertas = 0;
+    precio_luces = 0;
+}
+
 Auto::Auto(std::string marca) : Vehiculo() {
     std::string fileName = "Auto.txt";
     std::ifstream file(fileName);
@@ -31,7 +43,9 @@ Auto::Auto(std::string marca) : Vehiculo() {
 
     std::string line;
     std::string section;
-    bool marcaEncontrada = false; // Bandera para verificar si se encontró la marca
+    bool marcaEncontrada = false;
+    int precio_puertas = 0;
+    int precio_luces = 0;
     while (std::getline(file, line)) {
         std::istringstream iss(line);
         std::string key;
@@ -39,18 +53,18 @@ Auto::Auto(std::string marca) : Vehiculo() {
         if (iss >> section) {
             if (section == "Accesorios:") {
                 while (iss >> key >> value) {
-                    // std::cout << "Accesorio: " << key << ", Precio: " << value << std::endl; // Salida de depuración
                     if (key == "Puertas")
-                        setPrecioPuertas(value);
+                        precio_puertas = value;
                     else if (key == "Luces")
-                        setPrecioLuces(value);
+                        precio_luces = value;
                 }
             } else if (section == "Marcas:") {
                 while (iss >> key >> value) {
-                    // std::cout << "Marca: " << key << ", Precio del vehículo: " << value << std::endl; // Salida de depuración
                     if (key == marca) {
                         setPrecioVehiculo(value);
                         setMarca(key);
+                        setPrecioPuertas(precio_puertas);
+                        setPrecioLuces(precio_luces);
                         marcaEncontrada = true;
                         break;
                     }

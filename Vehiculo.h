@@ -11,4 +11,5 @@ public:
     int getPrecioVehiculo();
     void setPrecioVehiculo(int precio);
     void setMarca(std::string marca);
+    void setDataArchivo(std::string nombre_archivo);
 };
