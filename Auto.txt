@@ -1,2 +1,2 @@
-Accesorios: Puertas 200 Luces 100
-Marcas: Toyota 25000 Suzuki 15000
+Accesorios: Puertas 1000 Luces 600
+Marcas: Toyota 19000 Hyunday 16000 Susuki 12000 Ford 17000 Chevrolet 18000 Honda 21000

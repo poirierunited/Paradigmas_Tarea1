@@ -80,14 +80,14 @@ void Vehiculo::setDataArchivo(int tipo_vehiculo, std::string marca_ingresada) {
         nombre_accesorio_2 = "Luces";
         break;
     case 2: //Moto
-        nombre_archivo = "Auto.txt";
-        nombre_accesorio_1 = "Puertas";
-        nombre_accesorio_2 = "Luces";
+        nombre_archivo = "Moto.txt";
+        nombre_accesorio_1 = "Pedales";
+        nombre_accesorio_2 = "Espejos";
         break;
     case 3: //Camión
-        nombre_archivo = "Auto.txt";
-        nombre_accesorio_1 = "Puertas";
-        nombre_accesorio_2 = "Luces";
+        nombre_archivo = "Camion.txt";
+        nombre_accesorio_1 = "Caja";
+        nombre_accesorio_2 = "Ejes";
         break;
     default:
         nombre_archivo = "Auto.txt";
