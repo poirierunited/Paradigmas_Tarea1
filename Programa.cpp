@@ -338,26 +338,6 @@ void Programa::ejecutar() {
             // ================================ 4. Mostrar clientes con mayor compra de vehiculos y accesorios
             case 4:
                 {
-                    // int max_vehiculos;
-                    // int max_accesorios;
-                    // std::string nombre_cliente_max_vehiculos;
-                    // std::string nombre_cliente_max_accesorios;
-                    // for (auto& venta : ventas) {
-                    //     venta->setTotalVehiculosAccesorios();
-                    //     if (max_vehiculos < venta->getTotalVehiculos()) {
-                    //         max_vehiculos = venta->getTotalVehiculos();
-                    //         nombre_cliente_max_vehiculos = venta->getNombreCliente();
-                    //     }
-                    // }
-
-                    // for (auto& venta : ventas) {
-                    //     venta->setTotalVehiculosAccesorios();
-                    //     if (max_accesorios < venta->getTotalAccesorios()) {
-                    //         max_accesorios = venta->getTotalAccesorios();
-                    //         nombre_cliente_max_accesorios = venta->getNombreCliente();
-                    //     }
-                    // }
-
                     system("clear");
                     auto resultado_accesorios = get_max_accesorios();
                     int max_accesorios = resultado_accesorios.first;

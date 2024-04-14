@@ -12,11 +12,11 @@ private:
     std::string marca;
     int precio_vehiculo;
     std::string nombre_accesorio_1;
+    std::string nombre_accesorio_2;
     int precio_accesorio_1;
+    int precio_accesorio_2;
     int cant_accesorio_1;
     int cant_accesorio_2;
-    std::string nombre_accesorio_2;
-    int precio_accesorio_2;
     int cantidad_vehiculos;
 
 public:
