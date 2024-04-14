@@ -3,13 +3,9 @@
 
 class Auto : public Vehiculo {
 private:
-    int precio_puertas;
-    int precio_luces;
+    std::string tipo_vehiculo = "Auto";
 
 public:
-    Auto(std::string marca);
-    int getPrecioPuertas();
-    int getPrecioLuces();
-    void setPrecioPuertas(int precio);
-    void setPrecioLuces(int precio);
+    Auto();
+    std::string getTipoVehiculo();
 };

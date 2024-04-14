@@ -9,5 +9,10 @@ private:
 public:
     Programa();
     ~Programa();
-    void ejecutar(); 
+    void ejecutar();
+    int get_total_vehiculos();
+    int get_total_accesorios();
+    int get_total_clientes();
+    std::pair<int, std::string> get_max_accesorios();
+    std::pair<int, std::string> get_max_vehiculos();
 };
