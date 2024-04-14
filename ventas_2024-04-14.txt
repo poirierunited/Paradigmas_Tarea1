@@ -1,0 +1,33 @@
+CLIENTE: Alejandro
+RUT: Poirier
+CANTIDAD (Vehículos Total):0
+CANTIDAD (Accesorios Total):0
+Total precio Accesorios:0
+TOTAL precio Vehículos:0
+TOTAL con descuento %:0
+TOTAL GENERAL 0
+
+
+0
+CLIENTE: alejandropya
+RUT: 231421321
+CANTIDAD (Vehículos Total):0
+CANTIDAD (Accesorios Total):0
+Total precio Accesorios:0
+TOTAL precio Vehículos:0
+TOTAL con descuento %:0
+TOTAL GENERAL 0
+
+
+0
+CLIENTE: alejandro
+RUT: 213231132
+CANTIDAD (Vehículos Total):10
+CANTIDAD (Accesorios Total):10
+Total precio Accesorios:100000
+TOTAL precio Vehículos:250000
+TOTAL con descuento %:247500
+TOTAL GENERAL 347500
+
+
+347500
