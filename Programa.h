@@ -9,5 +9,7 @@ private:
 public:
     Programa();
     ~Programa();
-    void ejecutar(); 
+    void ejecutar();
+    int get_total_vehiculos();
+    int get_total_clientes();
 };

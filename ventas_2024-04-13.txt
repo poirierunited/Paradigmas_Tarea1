@@ -1,0 +1,22 @@
+CLIENTE: Alejandro
+RUT: 217282632
+CANTIDAD (Vehículos Total):42
+CANTIDAD (Accesorios Total):72
+Total precio Accesorios:100000
+TOTAL precio Vehículos:800000
+TOTAL con descuento %:792000
+TOTAL GENERAL 892000
+
+
+892000
+CLIENTE: Ricardo
+RUT: 342187
+CANTIDAD (Vehículos Total):40
+CANTIDAD (Accesorios Total):100
+Total precio Accesorios:50000
+TOTAL precio Vehículos:1000000
+TOTAL con descuento %:990000
+TOTAL GENERAL 1040000
+
+
+1040000
