@@ -31,3 +31,80 @@ TOTAL GENERAL 347500
 
 
 347500
+CLIENTE: Alejandro
+RUT: 217282632
+CANTIDAD (Vehículos Total):20
+CANTIDAD (Accesorios Total):13
+Total precio Accesorios:50000
+TOTAL precio Vehículos:300000
+TOTAL con descuento %:297000
+TOTAL GENERAL 347000
+
+
+347000
+CLIENTE: Alejandro
+RUT: 2172832
+CANTIDAD (Vehículos Total):20
+CANTIDAD (Accesorios Total):13
+Total precio Accesorios:2600
+TOTAL precio Vehículos:300000
+TOTAL con descuento %:297000
+TOTAL GENERAL 299600
+
+
+299600
+CLIENTE: Fernando
+RUT: 23718972839
+CANTIDAD (Vehículos Total):1
+CANTIDAD (Accesorios Total):30
+Total precio Accesorios:3000
+TOTAL precio Vehículos:15000
+TOTAL con descuento %:14850
+TOTAL GENERAL 17850
+
+
+17850
+CLIENTE: alejandro
+RUT: 2132131
+CANTIDAD (Vehículos Total):20
+CANTIDAD (Accesorios Total):13
+Total precio Accesorios:2600
+TOTAL precio Vehículos:300000
+TOTAL con descuento %:297000
+TOTAL GENERAL 299600
+
+
+299600
+CLIENTE: Fernando
+RUT: 2133123
+CANTIDAD (Vehículos Total):6
+CANTIDAD (Accesorios Total):130
+Total precio Accesorios:23000
+TOTAL precio Vehículos:140000
+TOTAL con descuento %:138600
+TOTAL GENERAL 161600
+
+
+161600
+CLIENTE: ale
+RUT: 4234
+CANTIDAD (Vehículos Total):20
+CANTIDAD (Accesorios Total):20
+Total precio Accesorios:2000
+TOTAL precio Vehículos:500000
+TOTAL con descuento %:495000
+TOTAL GENERAL 497000
+
+
+497000
+CLIENTE: Fernando
+RUT: 213123
+CANTIDAD (Vehículos Total):30
+CANTIDAD (Accesorios Total):30
+Total precio Accesorios:6000
+TOTAL precio Vehículos:450000
+TOTAL con descuento %:445500
+TOTAL GENERAL 451500
+
+
+451500

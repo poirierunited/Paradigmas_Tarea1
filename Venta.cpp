@@ -35,7 +35,7 @@ void Venta::guardarDatosVenta() {
         vehiculos_total += vehiculo.getCantidadVehiculos();
         total_precio_vehiculos += vehiculo.getPrecioVehiculo() * vehiculo.getCantidadVehiculos();
         accesorios_total += vehiculo.getCantidadAccesorio1() + vehiculo.getCantidadAccesorio2();
-        total_precio_accesorios += vehiculo.getPrecioAccesorio1()*vehiculo.getPrecioAccesorio1() + vehiculo.getPrecioAccesorio2()*vehiculo.getPrecioAccesorio2();
+        total_precio_accesorios += vehiculo.getCantidadAccesorio1()*vehiculo.getPrecioAccesorio1() + vehiculo.getCantidadAccesorio2()*vehiculo.getPrecioAccesorio2();
     }
 
     int descuento = 0;
@@ -87,7 +87,7 @@ void Venta::guardarDatosVenta() {
     std::cout << "TOTAL con descuento %:" << total_precio_vehiculos_descuento << std::endl;
 
     archivo << "TOTAL GENERAL " << total_general << std::endl;
-    archivo << "\n\n" << total_general << std::endl;
+    archivo << "\n\n" << std::endl;
     std::cout << "TOTAL GENERAL " << total_general << std::endl;
 
     archivo.close();
@@ -100,7 +100,8 @@ void Venta::setTotalVehiculosAccesorios() {
 
     for (auto& vehiculo : lista_vehiculos) {
         vehiculos_total += vehiculo.getCantidadVehiculos();
-        accesorios_total += vehiculo.getCantidadAccesorio1() + vehiculo.getCantidadAccesorio2();
+        accesorios_total += vehiculo.getCantidadAccesorio1();
+        accesorios_total += vehiculo.getCantidadAccesorio2();
     }
 
     cantidad_total_vehiculos = vehiculos_total;
